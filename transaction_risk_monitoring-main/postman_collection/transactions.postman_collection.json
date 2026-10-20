@@ -1,0 +1,132 @@
+{
+  "info": {
+    "_postman_id": "c7f85855-6720-4eca-b3d6-f081bd1805d9",
+    "name": "transactions",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "_exporter_id": "52802390",
+    "_collection_link": "https://go.postman.co/collection/52802390-c7f85855-6720-4eca-b3d6-f081bd1805d9?source=collection_link"
+  },
+  "item": [
+    {
+      "name": "Get All Transactions",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Create a New Transaction",
+      "request": {
+        "method": "POST",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": " {\n        \"amount\": 25000.0,\n        \"fromAccount\": \"ACC007\",\n        \"status\": \"PENDING\",\n        \"toAccount\": \"ACC0081\",\n        \"transactionType\": \"TRANSFER\"\n    }",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transactions",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get by Transaction ID",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/7e7cc162-03dc-4c53-864e-a39d71be7f54",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "7e7cc162-03dc-4c53-864e-a39d71be7f54"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Update Transaction",
+      "request": {
+        "method": "PUT",
+        "header": [],
+        "body": {
+          "mode": "raw",
+          "raw": "{\n    \"amount\": 300.0,\n    \"createdAt\": \"2026-03-01T16:44:44\",\n    \"fromAccount\": \"ACC001\",\n    \"id\": \"7e7cc162-03dc-4c53-864e-a39d71be7f54\",\n    \"riskScore\": 0,\n    \"status\": \"COMPLETED\",\n    \"toAccount\": \"ACC002\",\n    \"transactionType\": \"TRANSFER\"\n}",
+          "options": {
+            "raw": {
+              "language": "json"
+            }
+          }
+        },
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/7e7cc162-03dc-4c53-864e-a39d71be7f54",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "7e7cc162-03dc-4c53-864e-a39d71be7f54"
+          ]
+        }
+      },
+      "response": []
+    },
+    {
+      "name": "Get by Transaction by Account",
+      "request": {
+        "method": "GET",
+        "header": [],
+        "url": {
+          "raw": "http://localhost:8080/api/transactions/7e7cc162-03dc-4c53-864e-a39d71be7f54",
+          "protocol": "http",
+          "host": [
+            "localhost"
+          ],
+          "port": "8080",
+          "path": [
+            "api",
+            "transactions",
+            "7e7cc162-03dc-4c53-864e-a39d71be7f54"
+          ]
+        }
+      },
+      "response": []
+    }
+  ]
+}

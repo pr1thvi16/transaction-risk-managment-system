@@ -1,0 +1,1 @@
+CREATE DATABASE `surveillance_db`
